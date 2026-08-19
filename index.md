@@ -1,4 +1,4 @@
 ---
-title: Lord Pump's Test Site
+title: BLUFOR Studios' Blog
 ---
-This is a test!
+Hello there and welcome to our official GitHub-based blog! Here we upload all sorts of updates and exciting news to our projects, like OPFOR.
