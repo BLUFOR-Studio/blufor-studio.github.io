@@ -36,3 +36,10 @@
 ehthumbs.db
 Thumbs.db
 
+# Hugo files #
+##############
+/public/
+/resources/_gen/
+.hugo_build.lock
+hugo_stats.json
+/node_modules/
