@@ -1,0 +1,7 @@
+baseURL = 'https://example.org/'
+locale = 'en-us'
+title = 'BLUFOR Studio'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
