@@ -1,4 +1,5 @@
 baseURL = 'https://blufor-studio.github.io/'
+languageCode = "en"
 locale = 'en-us'
 title = 'BLUFOR Studio'
 
