@@ -13,10 +13,10 @@ title = "BLUFOR Studio's Blog"
   # description = "My awesome website"
 
 [params.author]
-  name = "{Lord Pump}"
-  image = "img/pump_goober.png"
+  name = "[𝘽𝙇𝙐𝙁𝙊𝙍 𝙎𝙩𝙪𝙙𝙞𝙤]"
+  # image = "img/blufor-studio.png"
   headline = "BLUFOR Studio's Director, JOAT"
-  bio = "Hey there, dear reader! I'm Lord Pump, the Director of our small indie team called BLUFOR Studio. We are a passionate bunch of individuals who like to dream big, and find ways to make said dreams true! Out of that shared enthusiasm, we joined forces to start active development for OPFOR on 2026, and we've created this small website to host our most recent news regarding our projects and team. We sincerely hope you have a nice time reading through our articles as you do playing our games!"
+  bio = "The development team im charge of OPFOR."
   # links = [
   #   { email = "mailto:hello@your_domain.com" },
   #   { link = "https://link-to-some-website.com/" },

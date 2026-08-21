@@ -3,6 +3,9 @@ languageCode = "en"
 locale = 'en-us'
 title = 'BLUFOR Studio'
 
+[taxonomies]
+author = "authors"
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'

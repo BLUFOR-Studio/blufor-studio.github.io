@@ -1,0 +1,81 @@
+{{/*
+  Site-level override of Congo's layouts/_partials/author.html.
+
+  Congo's stock partial always renders the single site.Language.Params.Author
+  config (see config/_default/languages.en.toml), ignoring any per-post
+  `authors = [...]` front matter. This override resolves the post's own
+  `authors` ids against data/<lang>/authors.toml (see that file for the
+  schema) and renders one byline per credited author, falling back to the
+  site-wide author when a post doesn't set `authors`.
+*/}}
+{{ if .Params.showAuthor | default (.Site.Params.article.showAuthor | default true) }}
+  {{ $lazy := .Params.enableImageLazyLoading | default .Site.Params.enableImageLazyLoading | default true }}
+  {{ $webp := .Site.Params.enableImageWebp | default true }}
+  {{ $lang := site.Language.Lang }}
+  {{ $authorsData := index site.Data $lang "authors" }}
+
+  {{/* Resolve each id in front matter's `authors` list to its data entry. */}}
+  {{ $resolved := slice }}
+  {{ with .Params.authors }}
+    {{ range . }}
+      {{ $id := . }}
+      {{ with $authorsData }}
+        {{ with index . $id }}
+          {{ $resolved = $resolved | append (dict "name" .name "image" .image "bio" .bio "links" .links) }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{/* No (valid) `authors` set on this post - fall back to the site author. */}}
+  {{ if not $resolved }}
+    {{ with site.Language.Params.Author }}
+      {{ $resolved = $resolved | append (dict "name" .name "image" .image "bio" .bio "links" .links) }}
+    {{ end }}
+  {{ end }}
+
+  {{ range $i, $a := $resolved }}
+    <div class="flex {{ if gt (len $resolved) 1 }}mb-4 last:mb-0{{ end }}">
+      {{ $altText := $a.name | default "Author" }}
+      {{ with $a.image }}
+        {{ $authorImage := resources.Get . }}
+        {{ if $authorImage }}
+          {{ $imgClass := "!mb-0 !mt-0 me-4 w-24 h-auto rounded-full" }}
+          {{ partial "picture.html" (dict "img" $authorImage "alt" $altText "class" $imgClass "lazy" $lazy "webp" $webp) }}
+        {{ end }}
+      {{ end }}
+      <div class="place-self-center">
+        {{ with $a.name | markdownify | emojify }}
+          <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+            {{ i18n "author.byline_title" | markdownify | emojify }}
+          </div>
+          <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+            {{ . }}
+          </div>
+        {{ end }}
+        {{ with $a.bio | markdownify | emojify }}
+          <div class="text-sm text-neutral-700 dark:text-neutral-400">{{ . }}</div>
+        {{ end }}
+        {{ with $a.links }}
+          <div class="text-2xl sm:text-lg">
+            <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+              {{ range $links := . }}
+                {{ range $name, $url := $links }}
+                  <a
+                    class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+                    style="will-change:transform;"
+                    href="{{ $url | safeURL }}"
+                    target="_blank"
+                    aria-label="{{ $name | title }}"
+                    rel="me noopener noreferrer"
+                    >{{ partial "icon.html" $name }}</a
+                  >
+                {{ end }}
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+{{ end }}
