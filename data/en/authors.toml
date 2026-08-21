@@ -52,8 +52,8 @@
 [blufor-studio]
   name = "[𝘽𝙇𝙐𝙁𝙊𝙍 𝙎𝙩𝙪𝙙𝙞𝙤]"
   image = "img/blufor-studio.png"
-  headline = "The whole team"
+  # headline = "The whole team"
   bio = "The development team im charge of OPFOR."
   links = [
-    { website = "https://blufor-studio.github.io/" },
+    { github = "https://github.com/BLUFOR-Studio" },
   ]

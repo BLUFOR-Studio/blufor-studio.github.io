@@ -1,7 +1,7 @@
 baseURL = 'https://blufor-studio.github.io/'
 languageCode = "en"
 locale = 'en-us'
-title = 'BLUFOR Studio'
+title = '[𝘽𝙇𝙐𝙁𝙊𝙍 𝙎𝙩𝙪𝙙𝙞𝙤]'
 
 [taxonomies]
 author = "authors"
