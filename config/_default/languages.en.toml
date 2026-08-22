@@ -3,7 +3,7 @@ label = "English"
 direction = "ltr"
 weight = 1
 
-title = "[𝘽𝙇𝙐𝙁𝙊𝙍 𝙎𝙩𝙪𝙙𝙞𝙤]"
+title = "[𝐁𝐋𝐔𝐅𝐎𝐑 𝐒𝐭𝐮𝐝𝐢𝐨]"
 # copyright = "Copy, _right?_ :thinking_face:"
 
 [params]
@@ -13,10 +13,10 @@ title = "[𝘽𝙇𝙐𝙁𝙊𝙍 𝙎𝙩𝙪𝙙𝙞𝙤]"
   # description = "My awesome website"
 
 [params.author]
-  name = "[𝘽𝙇𝙐𝙁𝙊𝙍 𝙎𝙩𝙪𝙙𝙞𝙤]"
+  name = "[𝐁𝐋𝐔𝐅𝐎𝐑 𝐒𝐭𝐮𝐝𝐢𝐨]"
   # image = "img/blufor-studio.png"
-  headline = "The development team im charge of OPFOR."
-  bio = "The development team im charge of OPFOR."
+  headline = "Test1."
+  bio = "Test2."
   links = [
   #   { email = "mailto:hello@your_domain.com" },
   #   { link = "https://link-to-some-website.com/" },
