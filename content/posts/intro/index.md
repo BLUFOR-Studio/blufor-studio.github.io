@@ -1,18 +1,20 @@
-\---
++++
+date = '2026-08-20T00:59:17-03:00'
+draft = true
+title = 'My First Post'
+# One or more author ids from data/en/authors.toml.
+# Use a single teammate...
+# authors = ['lord-pump']
+# ...or credit several teammates on the same post, e.g.:
+# authors = ['lord-pump', 'theinfinityglitch']
+# ...or post as the whole team:
+authors = ['blufor-studio']
++++
 
-title: "My First Blog Post"
+## Introduction
 
-date: 2022-01-25
+This is **bold** text, and this is *emphasized* text.
 
-description: "Welcome to my blog!"
-
-summary: "Learn more about me and why I am starting this blog."
-
-feature: "OPFOR.png"
-
-\---
-
-\_This\_ is the content of my blog post.
-
+Visit the [Hugo](https://gohugo.io) website!
 
 
