@@ -15,8 +15,8 @@ title = "[𝐁𝐋𝐔𝐅𝐎𝐑 𝐒𝐭𝐮𝐝𝐢𝐨]"
 [params.author]
   name = "[𝐁𝐋𝐔𝐅𝐎𝐑 𝐒𝐭𝐮𝐝𝐢𝐨]"
   # image = "img/blufor-studio.png"
-  headline = "Test1."
-  bio = "Test2."
+  headline = "The official webpage for the studio behind OPFOR"
+  bio = "Hello there and welcome! We are a bunch of enthusiastic, passionate indie developers that like not just to dream big, but to make said dreams come true. Across this page you'll find multiple blogs, updates and news regarding our projects. Enjoy the read!"
   links = [
   #   { email = "mailto:hello@your_domain.com" },
   #   { link = "https://link-to-some-website.com/" },
