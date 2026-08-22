@@ -1,6 +1,6 @@
 +++
 date = '2026-08-22T00:59:17-03:00'
-draft = true
+draft = false
 title = 'The Long Way Ahead...'
 feature = "OPFOR.png"
 authors = ['lord-pump']
