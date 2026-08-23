@@ -1,5 +1,5 @@
 +++
-date = '2026-08-22T00:59:17-03:00'
+date = '2026-08-23T00:59:17-03:00'
 draft = false
 title = 'The Long Way Ahead...'
 feature = "OPFOR.png"
@@ -109,7 +109,7 @@ insignificant in comparison to what we have already disclosed, it's actually one
 of the most important pillars of **OPFOR**'s essence.
 
 ### One simulation to rule them all
-[TODO]
+Beyond the gameplay, the graphics, the logic and all of that
 
 Visit the [Hugo](https://gohugo.io) website!
 
