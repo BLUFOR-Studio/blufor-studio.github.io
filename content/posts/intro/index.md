@@ -6,13 +6,17 @@ feature = "OPFOR.png"
 authors = ['lord-pump']
 
 # ALAN'S NOTE:
+
 # One or more author ids from data/en/authors.toml.
+
 # Use a single teammate...
 # authors = ['lord-pump']
 # ...or credit several teammates on the same post, e.g.:
 # authors = ['lord-pump', 'theinfinityglitch']
 # ...or post as the whole team:
 # authors = ['blufor-studio']
+
+# To make a link: Visit the [Hugo](https://gohugo.io) website!
 +++
 
 ## A brief look at the past...
@@ -109,8 +113,92 @@ insignificant in comparison to what we have already disclosed, it's actually one
 of the most important pillars of **OPFOR**'s essence.
 
 ### One simulation to rule them all
-Beyond the gameplay, the graphics, the logic and all of that
+Beyond the gameplay, the graphics, the logic and other very important components, 
+it's the internal simulation that really brings it all together. OPFOR runs it in 
+the background, allowing it to know the state of any unit on the map as well as 
+managing said units. Since it can see (and work with) **all echelons** altogether 
+AND at the same time, it can influence said missions and change the conditions in 
+real time to ensure a smooth, unified experience where *every act has a consequence*.
 
-Visit the [Hugo](https://gohugo.io) website!
+This methodology introduces yet another interesting set of properties into our game: 
+no longer missions are individual, independent sorties where blasting off 10 tanks 
+in a particular formation is irrelevant. Said losses are **permanent** and both sides 
+**have to deal with them**. Personnel, gear, ammunition and every single piece of 
+equipment or personnel is accounted for at all times, and that doesn't limit itself 
+to specific assets; buildings, civilian conditions and infrastructure, as well as 
+a wide arrange of other features is also saved and stored to ensure that every target 
+hit is a little victory on itself that affects future operations.
+
+Of course, the relevance and weight of said victories is proportional to the echelon 
+of command it would "belong" to. **Tactical** losses are the day-to-day casualties 
+of typical combat, but enough of those operations planned through the **Low Command** 
+echelon is bound to seriously hurt your enemy; and a successful set of those will 
+ultimately grant you a strategical advantage on **High Command**. This, in turn, 
+also implies that whatever decisions (good or bad) are taken in the highest echelon 
+will carry grave consequences to the lower echelons, meaning having a solid chain 
+of command and good leadership is key to ensure your side has a fighting chance at 
+all, like multiple conflicts across real-life history have proven time and time again.
+
+This has a very particular side effect on players who are playing in **High Command**, 
+as their own poor decision-making would not really yield any consequences that compare 
+in severity to being killed in action because some politician and/or commander told 
+you that you had to follow a specific RoE, or assault a position with impossible odds 
+stacked against your unit. It's for this reason that **OPFOR** includes another interesting 
+set of mechanics, which could not be better described without the use of yet another 
+historical quote (often times attributed to Stalin himself, even though erroneously 
+so):
+
+### The death of a man is a tragedy...
+...but the death of millions is a statistic. At least, that's one of the many variants 
+that saying has; but what it really means in this context is also tied to the previous 
+concept of **"there's a consequence to everything in OPFOR"**. Most videogames, 
+specifically shooters, are known for the absolute lack of self-preservation whatsoever 
+other than *"not losing the game"* (which despite being the point on more arcade-y 
+FPS titles like *Battlefield* or *Call of Duty*, it's not really very fitting for milsim 
+titles like *Arma, Squad, Steel Beasts, DCS, etc*). However, providing a player who 
+is sitting in the comfort of their sofa and pressing some keys with the sensation of 
+being a soldier with his life on the line, as well as balancing that with the other 
+echelons' perspectives is a very complex issue that **cannot be solved with a single 
+mechanic**.
+
+One of the typical ways in which videogames solve this problem is by making the results 
+of "losing" a game far more of a hassle than just taking a kick to one's ego. **Permadeath** 
+modes are the most basic example of this methodology: the player loses the whole 
+save if they fail; however that is usually more of an extreme challenge over the 
+base game's experience rather than a standalone experience, and there's always the 
+ever-present chance of it triggering due to a bug or imbalance of the game itself 
+which isn't necessarily a player's mistake, *adding to the frustration of losing.* 
+More mechanics of this kind include **inventory or resource loss**, or having to 
+**travel your way back** to the frontline again, amongst others.
+
+I don't want to get into much detail as to how **OPFOR** will be tackling these 
+issues, first of all because it's going to be better addressed in later posts, it 
+is one of the features that will take the longest to get implemented into the game, 
+and we also want to save some surprises for the future. Long story short, we will 
+include plenty of mechanics to ensure a **high-stakes, balanced gameplay** on the 
+sense that every bullet counts, you cannot brush off impacts, you have to account 
+for adrenaline and stress as well as the "fight or flight" response, amongst many 
+other factors. This applies to *every enemy and ally* the same way it works for the 
+player, and even though outdated gear and untrained forces can still win what would 
+first seem like a losing battle, odds are they won't even if the player is one of 
+them.
+
+Another important way of how these methods will work cohesively in a way that is 
+playable but also immersive comes from the fact that *the player's character* isn't 
+who the player actually is. Instead you control their "mind", meaning the character 
+is still capable of *freezing* or *reacting instinctively*. It will have high odds 
+of giving priority to *pain response* rather than obeying the player commands when 
+getting hit, and just like in real life you will *fumble when reloading* if there's 
+a machine gun firing at your position. However, often times (particularly in games 
+like these), **realism and gameplay** find themselves in **diametrically opposite ends** 
+on what refers to game design. Talking about which, this is actually the perfect 
+moment to talk about the next big topic: 
 
 
+## The aesthetics of OPFOR
+Beyond all the small details and specific trickery that we'll be using to **make OPFOR 
+"feel" like OPFOR**, there's a very important underlying question that acts as the 
+root of our *entire design philosophy*. Even though we are still a long way away from 
+releasing most of the stuff we will be commenting on here, it's still worth giving 
+a *first impression* as to what our aim actually is, so you can properly judge beforehand 
+if **OPFOR** is your kind of game, or not.
