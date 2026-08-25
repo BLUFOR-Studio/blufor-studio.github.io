@@ -39,13 +39,13 @@ links = [
 
 [parm]
 name = "Parm"
-# image = "img/authors/parm.png"
+image = "img/authors/parm_pfp.jpg"
 headline = "Role / Title"
 bio = "Queen"
 
 [luna]
 name = "Luna"
-# image = "img/authors/luna.png"
+image = "img/authors/luna_pfp.png"
 headline = "Role / Title"
 bio = "Queen"
 

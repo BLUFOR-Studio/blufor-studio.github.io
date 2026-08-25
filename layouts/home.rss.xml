@@ -1,13 +1,3 @@
-{{/*
-  Site-level override of Hugo's embedded rss.xml, scoped to the home page
-  only (file name "home.rss.xml" - see https://gohugo.io/templates/rss/).
-
-  Identical to Hugo's default template, except $pages is filtered down to
-  site.Params.mainSections (currently ["posts"]), the same filter Congo's
-  own homepage "Recent" partial (recent-articles.html) uses. Without this,
-  the default feed template includes every regular page site-wide,
-  including /team/<id>/ pages.
-*/}}
 {{- $authorEmail := "" }}
 {{- with site.Params.author }}
   {{- if reflect.IsMap . }}
