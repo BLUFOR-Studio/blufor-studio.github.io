@@ -7,5 +7,5 @@ title = '[𝘽𝙇𝙐𝙁𝙊𝙍 𝙎𝙩𝙪𝙙𝙞𝙤]'
 author = "authors"
 
 [caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+[caches.images]
+dir = ':cacheDir/images'

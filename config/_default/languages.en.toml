@@ -7,17 +7,17 @@ title = "[𝐁𝐋𝐔𝐅𝐎𝐑 𝐒𝐭𝐮𝐝𝐢𝐨]"
 # copyright = "Copy, _right?_ :thinking_face:"
 
 [params]
-  dateFormat = "2 January 2006"
+dateFormat = "2 January 2006"
 
-  # mainSections = ["section1", "section2"]
-  # description = "My awesome website"
+# mainSections = ["section1", "section2"]
+# description = "My awesome website"
 
 [params.author]
-  name = "[𝐁𝐋𝐔𝐅𝐎𝐑 𝐒𝐭𝐮𝐝𝐢𝐨]"
-  # image = "img/blufor-studio.png"
-  headline = "The official webpage for the studio behind OPFOR"
-  bio = "Hello there and welcome! We are a bunch of enthusiastic, passionate indie developers that like not just to dream big, but to make said dreams come true. Across this page you'll find multiple blogs, updates and news regarding our projects. Enjoy the read!"
-  links = [
+name = "[𝐁𝐋𝐔𝐅𝐎𝐑 𝐒𝐭𝐮𝐝𝐢𝐨]"
+# image = "img/blufor-studio.png"
+headline = "The official webpage for the studio behind OPFOR"
+bio = "Hello there and welcome! We are a bunch of enthusiastic, passionate indie developers that like not just to dream big, but to make said dreams come true. Across this page you'll find multiple blogs, updates and news regarding our projects. Enjoy the read!"
+links = [
   #   { email = "mailto:hello@your_domain.com" },
   #   { link = "https://link-to-some-website.com/" },
   #   { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
@@ -30,7 +30,7 @@ title = "[𝐁𝐋𝐔𝐅𝐎𝐑 𝐒𝐭𝐮𝐝𝐢𝐨]"
   #   { facebook = "https://facebook.com/username" },
   #   { flickr = "https://www.flickr.com/photos/username/" },
   #   { foursquare = "https://foursquare.com/username" },
-   { github = "https://github.com/BLUFOR-Studio" },
+  { github = "https://github.com/BLUFOR-Studio" },
   #   { gitlab = "https://gitlab.com/username" },
   #   { google = "https://www.google.com/" },
   #   { google-scholar = "https://scholar.google.com/citations?user=user-id" },
@@ -64,4 +64,4 @@ title = "[𝐁𝐋𝐔𝐅𝐎𝐑 𝐒𝐭𝐮𝐝𝐢𝐨]"
   #   { x-twitter = "https://twitter.com/username" },
   #   { youtube = "https://youtube.com/username" },
   #   { xing = "https://xing.com/profile/username" },
-  ]
+]
