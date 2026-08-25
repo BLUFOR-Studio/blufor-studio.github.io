@@ -9,7 +9,7 @@ title = "[𝐁𝐋𝐔𝐅𝐎𝐑 𝐒𝐭𝐮𝐝𝐢𝐨]"
 [params]
 dateFormat = "2 January 2006"
 
-# mainSections = ["section1", "section2"]
+mainSections = ["posts"]
 # description = "My awesome website"
 
 [params.author]

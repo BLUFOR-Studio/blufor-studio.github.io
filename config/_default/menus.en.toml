@@ -20,15 +20,10 @@ name = "Blog"
 pageRef = "posts"
 weight = 20
 
-# [[main]]
-#   name = "Categories"
-#   pageRef = "categories"
-#   weight = 30
-
-# [[main]]
-#   name = "Tags"
-#   pageRef = "tags"
-#   weight = 40
+[[main]]
+name = "Team"
+pageRef = "team"
+weight = 30
 
 [[main]]
 identifier = "search"
