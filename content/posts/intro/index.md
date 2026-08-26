@@ -202,3 +202,24 @@ root of our *entire design philosophy*. Even though we are still a long way away
 releasing most of the stuff we will be commenting on here, it's still worth giving 
 a *first impression* as to what our aim actually is, so you can properly judge beforehand 
 if **OPFOR** is your kind of game, or not.
+
+### Realism, or immersion?
+Although we clearly ain't conformist in the slightest, sometimes *sacrifices must 
+be made*. While we try to achieve the best results on both of these categories, 
+if we ever need to prioritize one of them above the other it'll be done so in a 
+way that ensures **the most coherent feel gameplay-wise**. In other words, we will 
+try to adequate to reality and also provide an enjoyable experience, but we prioritize 
+*"the game feel"* over *"pinpoint realistic accuracy"* if we find ourselves in an 
+extreme case. For example, making the game completely HUD-less from a first-person 
+perspective could be troublesome for a handful of features, but we aim to **minimize 
+its use on the game** and also design it in a way that blends with it in order to 
+maximize immersion whenever possible.
+
+### On the topic of graphics... 
+It's pretty much standard issue these days to see milsim games showing off their 
+*hyper-realistic high fidelity assets* in all their glory, and while that's not necessarily 
+bad in and on itself, we believe it's a *poor decision* to operate ourselves in such 
+fashion. Not only that'd make asset creation take a **considerably longer time** to do, 
+but it'd also have a **negative impact in performance** for lower end devices, newer 
+graphical fidelity technologies could **leave it deprecated** and it'd not "stand out" 
+on that aspect, amongst other issues.
