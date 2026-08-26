@@ -18,42 +18,40 @@
 # Keep the ids lowercase, hyphenated, no spaces - they become part of the URL at /authors/<id>/.
 
 [lord-pump]
-  name = "{Lord Pump}"
-  image = "img/authors/pump_pfp.png"
-  headline = "Director, JOAT"
-  bio = "Hey there, dear reader! I'm Lord Pump, the Head Director of BLUFOR Studios. I'm a jack-of-all-trades who likes to delve into the nitty-gritty details of everything and learn how stuff works! I usually handle the announcements and big update posts on the blog, as well as some special posts from time to time."
-  # links = [
-  #   { twitter = "https://twitter.com/username" },
-  #   { github = "https://github.com/username" },
-  # ]
+name = "{Lord Pump}"
+image = "img/authors/pump_pfp.png"
+headline = "Director, JOAT"
+bio = "Hey there, dear reader! I'm Lord Pump, the Head Director of BLUFOR Studios. I'm a jack-of-all-trades who likes to delve into the nitty-gritty details of everything and learn how stuff works! I usually handle the announcements and big update posts on the blog, as well as some special posts from time to time."
+# links = [
+#   { twitter = "https://twitter.com/username" },
+#   { github = "https://github.com/username" },
+# ]
 
 [theinfinityglitch]
-  name = "The Infinity Glitch (Alan)"
-  image = "img/authors/alan_pfp.jpg"
-  headline = "Programmer/Tooling"
-  bio = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA. I will do this later"
-  links = [
-    { twitter = "https://twitter.com/ErrorNineNine" },
-    { github = "https://github.com/theinfinityglitch" }
-  ]
+name = "The Infinity Glitch (Alan)"
+image = "img/authors/alan_pfp.jpg"
+headline = "Programmer/Tooling"
+bio = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA. I will do this later"
+links = [
+  { twitter = "https://twitter.com/ErrorNineNine" },
+  { github = "https://github.com/theinfinityglitch" },
+]
 
 [parm]
-  name = "Parm"
-  # image = "img/authors/parm.png"
-  headline = "Role / Title"
-  bio = "Queen"
+name = "Parm"
+image = "img/authors/parm_pfp.jpg"
+headline = "Role / Title"
+bio = "Queen"
 
 [luna]
-  name = "Luna"
-  # image = "img/authors/luna.png"
-  headline = "Role / Title"
-  bio = "Queen"
+name = "Luna"
+image = "img/authors/luna_pfp.png"
+headline = "Role / Title"
+bio = "Queen"
 
 [blufor-studio]
-  name = "[𝘽𝙇𝙐𝙁𝙊𝙍 𝙎𝙩𝙪𝙙𝙞𝙤]"
-  image = "img/blufor-studio.png"
-  # headline = "The whole team"
-  bio = "We are a passionate bunch of individuals who like to dream big, and find ways to make said dreams true! Out of that shared enthusiasm, we joined forces to start active development for OPFOR on 2026, and we've created this small website to host our most recent news regarding our projects and team."
-  links = [
-    { github = "https://github.com/BLUFOR-Studio" },
-  ]
+name = "[𝘽𝙇𝙐𝙁𝙊𝙍 𝙎𝙩𝙪𝙙𝙞𝙤]"
+image = "img/blufor-studio.png"
+# headline = "The whole team"
+bio = "We are a passionate bunch of individuals who like to dream big, and find ways to make said dreams true! Out of that shared enthusiasm, we joined forces to start active development for OPFOR on 2026, and we've created this small website to host our most recent news regarding our projects and team."
+links = [{ github = "https://github.com/BLUFOR-Studio" }]

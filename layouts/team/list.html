@@ -1,0 +1,51 @@
+{{ define "main" }}
+<header>
+  {{ if .Params.showBreadcrumbs | default (.Site.Params.list.showBreadcrumbs | default false) }}
+  {{ partial "breadcrumbs.html" . }}
+  {{ end }}
+  <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+</header>
+{{ if .Content }}
+<section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+  <div class="min-h-0 min-w-0 max-w-prose grow">
+    {{ .Content | emojify }}
+  </div>
+</section>
+{{ end }}
+
+{{ $lang := site.Language.Lang }}
+{{ $authorsData := index site.Data $lang "authors" }}
+{{ $lazy := site.Params.enableImageLazyLoading | default true }}
+{{ $webp := site.Params.enableImageWebp | default true }}
+
+<section class="-mx-2 mt-6 flex flex-wrap overflow-hidden">
+  {{ range .Pages }}
+  {{ $id := .File.ContentBaseName }}
+  {{ $author := "" }}
+  {{ with $authorsData }}
+  {{ with index . $id }}
+  {{ $author = . }}
+  {{ end }}
+  {{ end }}
+  <article class="my-3 w-full overflow-hidden px-2 text-center sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
+    <a href="{{ .Permalink }}" class="group block">
+      {{ with $author.image }}
+      {{ $authorImage := resources.Get . }}
+      {{ if $authorImage }}
+      {{ $imgClass := "mx-auto mb-2 h-24 w-24 rounded-full object-cover" }}
+      {{ $altText := $author.name | default $.Title }}
+      {{ partial "picture.html" (dict "img" $authorImage "alt" $altText "class" $imgClass "lazy" $lazy "webp"
+      $webp) }}
+      {{ end }}
+      {{ end }}
+      <h2 class="text-xl font-medium decoration-primary-500 group-hover:underline group-hover:underline-offset-2">
+        {{ if $author }}{{ $author.name }}{{ else }}{{ .Title }}{{ end }}
+      </h2>
+      {{ with $author.headline }}
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">{{ . }}</p>
+      {{ end }}
+    </a>
+  </article>
+  {{ end }}
+</section>
+{{ end }}
