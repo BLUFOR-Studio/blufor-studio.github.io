@@ -42,9 +42,7 @@ name = "Parm"
 image = "img/authors/parm_pfp.jpg"
 headline = "Programmer/General purpose"
 bio = "Hello there! I'm Parm, Programmer and one of the Lead Developers of BLUFOR Studios. I'm here to get down into the code, and helping code from the lowest level of the simulations to the UI, I have a few years of experience and I've been coding since I was young (well I still am lol). :3"
-links = [
-  { github = "https://github.com/parmn-prog" }
-]
+links = [{ github = "https://github.com/parmn-prog" }]
 
 [luna]
 name = "Luna"
