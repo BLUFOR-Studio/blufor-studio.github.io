@@ -4,7 +4,7 @@
 {{- if $logo }}
 <a href="{{ "" | relLangURL }}" class="mr-2">
   <!-- prettier-ignore-attribute -->
-  <img src="{{ $logo.Permalink }}" width="{{ div $logo.Width 3 }}" height="{{ div $logo.Height 3 }}" class="max-h-[10rem] max-w-[10rem] object-scale-down object-left
+  <img src="{{ $logo.Permalink }}" width="{{ div $logo.Width 4 }}" height="{{ div $logo.Height 4 }}" class="max-h-[10rem] max-w-[10rem] object-scale-down object-left
         {{ if $logo_dark }}dark:hidden flex{{ end }}" alt="{{ .Site.Title }}" />
   {{- if $logo_dark }}
   <img src="{{ $logo_dark.Permalink }}" width="{{ div $logo_dark.Width 2 }}" height="{{ div $logo_dark.Height 2 }}"
