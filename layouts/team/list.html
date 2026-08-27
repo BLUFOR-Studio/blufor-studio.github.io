@@ -18,7 +18,7 @@
 {{ $lazy := site.Params.enableImageLazyLoading | default true }}
 {{ $webp := site.Params.enableImageWebp | default true }}
 
-<section class="-mx-2 mt-6 flex flex-wrap overflow-hidden">
+<section class="-mx-2 mt-6 flex flex-wrap justify-center overflow-hidden">
   {{ range .Pages }}
   {{ $id := .File.ContentBaseName }}
   {{ $author := "" }}

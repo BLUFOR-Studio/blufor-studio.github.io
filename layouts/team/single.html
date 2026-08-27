@@ -9,32 +9,34 @@
 {{ end }}
 {{ end }}
 
-<header class="max-w-prose">
-  {{ if .Params.showBreadcrumbs | default (.Site.Params.list.showBreadcrumbs | default false) }}
-  {{ partial "breadcrumbs.html" . }}
-  {{ end }}
-  {{ if $author }}
-  {{ partial "author-profile.html" (dict "author" $author "align" "center") }}
-  {{ else }}
-  <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
-  {{ end }}
-</header>
+<div class="mx-auto max-w-prose">
+  <header>
+    {{ if .Params.showBreadcrumbs | default (.Site.Params.list.showBreadcrumbs | default false) }}
+    {{ partial "breadcrumbs.html" . }}
+    {{ end }}
+    {{ if $author }}
+    {{ partial "author-profile.html" (dict "author" $author "align" "center") }}
+    {{ else }}
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+    {{ end }}
+  </header>
 
-{{ if .Content }}
-<section class="prose mt-6 max-w-prose dark:prose-invert">
-  {{ .Content | emojify }}
-</section>
-{{ end }}
-
-{{/* Posts crediting this id in their `authors` front matter. */}}
-{{ $posts := where site.RegularPages "Params.authors" "intersect" (slice $id) }}
-{{ if $posts }}
-<section>
-  <h2 class="mt-12 text-2xl font-bold text-neutral-700 dark:text-neutral-300">Posts</h2>
-  <hr class="w-36 border-dotted border-neutral-400" />
-  {{ range $posts.ByDate.Reverse }}
-  {{ partial "article-link.html" . }}
+  {{ if .Content }}
+  <section class="prose mt-6 dark:prose-invert">
+    {{ .Content | emojify }}
+  </section>
   {{ end }}
-</section>
-{{ end }}
+
+  {{/* Posts crediting this id in their `authors` front matter. */}}
+  {{ $posts := where site.RegularPages "Params.authors" "intersect" (slice $id) }}
+  {{ if $posts }}
+  <section>
+    <h2 class="mt-12 text-2xl font-bold text-neutral-700 dark:text-neutral-300">Posts</h2>
+    <hr class="w-36 border-dotted border-neutral-400" />
+    {{ range $posts.ByDate.Reverse }}
+    {{ partial "article-link.html" . }}
+    {{ end }}
+  </section>
+  {{ end }}
+</div>
 {{ end }}

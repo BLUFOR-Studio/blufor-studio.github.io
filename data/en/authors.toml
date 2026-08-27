@@ -31,10 +31,17 @@ bio = "Hey there, dear reader! I'm Lord Pump, the Head Director of BLUFOR Studio
 name = "The Infinity Glitch (Alan)"
 image = "img/authors/alan_pfp.jpg"
 headline = "Programmer/Tooling"
-bio = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA. I will do this later"
+bio = "Heya! I'm Alan, a Programmer and maybe tooling developer, and also a JOAT of BLUFOR Studios. I'm bad at math, so I'm far away of algorithms so far. I'm here to work with the game code when possible, but mostly to interact with the low level tooling systems including the engine. I'm 18 years old, and I've been coding for the last 8 years btw. o7"
 links = [
-  { twitter = "https://twitter.com/ErrorNineNine" },
+  { email = "theinfinityglitch@gmail.com" },
   { github = "https://github.com/theinfinityglitch" },
+  { gitlab = "https://gitlab.com/theinfinityglitch" },
+  { instagram = "https://instagram.com/theinfinityglitch" },
+  { linkedin = "https://linkedin.com/in/theinfinityglitch" },
+  { pinterest = "https://pinterest.com/theinfinityglitch" },
+  { reddit = "https://reddit.com/user/TheInfinityGlitch" },
+  { twitter = "https://twitter.com/ErrorNineNine" },
+  { youtube = "https://youtube.com/@theinfinityglitch" },
 ]
 
 [parm]
@@ -42,9 +49,7 @@ name = "Parm"
 image = "img/authors/parm_pfp.jpg"
 headline = "Programmer/General purpose"
 bio = "Hello there! I'm Parm, Programmer and one of the Lead Developers of BLUFOR Studios. I'm here to get down into the code, and helping code from the lowest level of the simulations to the UI, I have a few years of experience and I've been coding since I was young (well I still am lol). :3"
-links = [
-  { github = "https://github.com/parmn-prog" }
-]
+links = [{ github = "https://github.com/parmn-prog" }]
 
 [luna]
 name = "Luna"
