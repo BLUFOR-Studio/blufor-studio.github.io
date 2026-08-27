@@ -215,11 +215,49 @@ perspective could be troublesome for a handful of features, but we aim to **mini
 its use on the game** and also design it in a way that blends with it in order to 
 maximize immersion whenever possible.
 
-### On the topic of graphics... 
+### On the topic of graphics
 It's pretty much standard issue these days to see milsim games showing off their 
 *hyper-realistic high fidelity assets* in all their glory, and while that's not necessarily 
 bad in and on itself, we believe it's a *poor decision* to operate ourselves in such 
 fashion. Not only that'd make asset creation take a **considerably longer time** to do, 
 but it'd also have a **negative impact in performance** for lower end devices, newer 
 graphical fidelity technologies could **leave it deprecated** and it'd not "stand out" 
-on that aspect, amongst other issues.
+on that aspect, amongst other issues. It's for this reason that we've decided to 
+take a rather "unique" approach: a ***stylished, low poly asset*** design phylosophy 
+with ***high-detail pixel art*** is the most general sketch of what we're aiming 
+to work with, making the most out of *illumination*, *particle effects*, *sound design* 
+and other features to complement the atmosphere of the game and provide an enhanced 
+sense of immersion.
+
+### Can it run in *[insert potato computer]*?
+While we do make a great effort on providing good performance in lower-end devices, 
+**OPFOR** is still a **very heavy game** running a lot of things both in the background 
+and also right in front of the player. We cannot promise levels of optimization akin 
+to those of DooM (the original ones that runs on *literally anything*), but that 
+doesn't mean we won't be trying our best to make the game *playable on something 
+other than a NASA supercomputer*. One of the many ways we ensure our compromise with 
+said standards is the fact that we always test our game on *multiple devices*, amongst 
+which there's an array of both **high and low end computers** so we can get a *good idea* 
+of the performance the playerbase would get at an average.
+
+### How "exactly" does one play OPFOR?
+The core fundamentals of playing **OPFOR** boils down to granting the player the 
+ability to engage in any and all roles available at a conflict, which changes every 
+time you run a new game. This means you can be a *tank gunner*, a *sniper* from 
+Special Forces, an *air-superiority fighter jet pilot*, or even one of the *higher-ups* 
+giving the orders. Explaining every single possible job at this point would be an 
+impossible task, not only because they are on active development as we speak and 
+most of them will take a **considerable amount of time** to get implemented but 
+also because there's such a big amount of them that **it'd become an article** 
+in and on itself.
+
+Regarding the "where" and "who", **OPFOR** is mainly being developed as a ***first-person 
+singleplayer experience for PCs*** sporting Windows and Linux operating systems. That 
+being said, compatibility with other computer-based OS (like Mac) is intended, as 
+well as multiplayer experiences in **cooperative** and **PvP** within the usual 
+atmosphere of the game are intended to be available as well later down the line.
+
+### The million dollar question...
+...or in other words, is **OPFOR**'s price tag *a million dollars?* Same as with the 
+gameplay or the performance questions, the following is just a *declaration of intentions* 
+rather than *something set in stone*. 
