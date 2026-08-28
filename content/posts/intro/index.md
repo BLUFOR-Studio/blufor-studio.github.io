@@ -1,9 +1,10 @@
 +++
-date = '2026-08-23T00:59:17-03:00'
+date = '2026-08-24T12:00:00-03:00'
 draft = false
 title = 'The Long Way Ahead...'
 feature = "OPFOR.png"
 authors = ['lord-pump']
+tags = ['announcement']
 
 # ALAN'S NOTE:
 
