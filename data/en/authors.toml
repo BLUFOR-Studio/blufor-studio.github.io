@@ -54,8 +54,8 @@ links = [{ github = "https://github.com/parmn-prog" }]
 [luna]
 name = "Luna"
 image = "img/authors/luna_pfp.png"
-headline = "Role / Title"
-bio = "Queen"
+headline = "[TODO]"
+bio = "[TODO]"
 
 [blufor-studio]
 name = "[𝘽𝙇𝙐𝙁𝙊𝙍 𝙎𝙩𝙪𝙙𝙞𝙤]"

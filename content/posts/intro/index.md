@@ -260,4 +260,47 @@ atmosphere of the game are intended to be available as well later down the line.
 ### The million dollar question...
 ...or in other words, is **OPFOR**'s price tag *a million dollars?* Same as with the 
 gameplay or the performance questions, the following is just a *declaration of intentions* 
-rather than *something set in stone*. 
+rather than *something set in stone*. Our aim is to **release public early access** once 
+we achieve playability of a *good part of the High Command echelon* at a price of 
+***roughly 20€***, then ramp up the price progressively until a ***max of around 40€*** 
+once the game is "complete" in terms of gameplay (i.e. not accounting for additional 
+units, factions, eras, etc. added afterwards which don't significantly alter gameplay 
+but do add content to the game), from which it will *no longer increase*. Subscription 
+systems, sponsorships, loot crate systems, purchasable cosmetics and similars will 
+**NOT** be added anytime into the game as we believe in a **"single payment"** 
+philosophy, meaning you get the whole game by simply paying once for it, *regardless 
+of future price escalations*. As for **DLCs or Dowloadable Content**, it still remains 
+unclear if we'll make use of them or not, but *they will be free* unless it provides 
+some sort of *story mode/narrative* external to the main game itself, in which case 
+we won't make it more expensive than the base game either and it'll be completely 
+optional with ***no repercussions on the gameplay***.
+
+Even with the big ones out of the way, there's still plenty of questions out there 
+left to answer, like *"will OPFOR provide modding support?"* (yes), *"what nations 
+or units will show up?"* (all fictional, with some randomness involved), *"what 
+time period are we fighting in?"* (1990-2000s type of technology for the most advanced 
+nations), etc. However, as with most of the other topics in this part of the article, 
+we will uncover them in greater detail as we go. Talking about which, it's about 
+time we tell you how we are...
+
+## Paving the way there!
+While we will deliver a proper **roadmap** of our development plans, alongside the 
+corresponding explanations; we want to give you a broad sketch of where we will be 
+focusing our efforts. As we have stated a couple of times before, our main aim right 
+now is to complete the ***internal simulation***, ensuring it's up and running perfectly 
+so we can add the rest of gameplay and functionality *on top of it*. After that, 
+we will progressively add the rest of echelons, going from **High Command** to **Low 
+Command** and then **Tactical**. 
+
+This is obviously **not a hard limit** and we might find ourselves adding new capabilities 
+to previous echelons later down the line: more weapon systems, platforms, mechanics, 
+you name it! We'll also be providing *constant updates* on our ongoing progress, *sharing 
+blog posts* like these with the latest news and making sure everything runs as **smoothly 
+as possible** despite our limitations.
+
+In the end, all of us know this is going to be a **very long marathon**. As awesome 
+as the dream is, turning it into a reality is going to take a lot of *effort and time*; 
+but is it really a sacrifice if we get to enjoy the ride? This is going to be a journey 
+that we will share with you, blog by blog, update by update, and hopefully one day 
+we will look back at this with pride, knowing that it's *no longer a fantasy*. That it's 
+the *ultimate military simulation*, right in our hands. That it is... ***OPFOR***.
