@@ -145,3 +145,43 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+  notify:
+    runs-on: ubuntu-latest
+    needs: deploy
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Cache restore (notified posts state)
+        id: notify-cache-restore
+        uses: actions/cache/restore@v6
+        with:
+          path: .cache/notified-posts.json
+          key: notified-posts-${{ github.run_id }}
+          restore-keys: notified-posts-
+
+      - name: Find newly-public posts
+        run: |
+          BASE_URL=$(grep -oP "^baseURL\s*=\s*['\"]\K[^'\"]+" hugo.toml)
+          python3 scripts/find_new_posts.py \
+            --content-dir content/posts \
+            --authors-file data/en/authors.toml \
+            --base-url "$BASE_URL" \
+            --state-file .cache/notified-posts.json \
+            --out new-posts.json
+          cat new-posts.json
+
+      - name: Cache save (notified posts state)
+        uses: actions/cache/save@v6
+        with:
+          path: .cache/notified-posts.json
+          key: ${{ steps.notify-cache-restore.outputs.cache-primary-key }}
+
+      - name: Send Discord notification
+        if: ${{ secrets.DISCORD_WEBHOOK_URL != '' }}
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          python3 scripts/notify_discord.py --posts new-posts.json --webhook-url "$DISCORD_WEBHOOK_URL"
