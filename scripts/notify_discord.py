@@ -52,7 +52,10 @@ def main():
         req = urllib.request.Request(
             args.webhook_url,
             data=data,
-            headers={"Content-Type": "application/json"},
+            headers={
+                "Content-Type": "application/json",
+                "User-Agent": "blufor-studio-blog-notifier/1.0 (+https://blufor-studio.github.io/)",
+            },
             method="POST",
         )
         try:
