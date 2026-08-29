@@ -194,5 +194,12 @@ jobs:
 
       - name: Send Discord notification
         if: ${{ env.DISCORD_WEBHOOK_URL != '' }}
+        env:
+          DISCORD_NEWS_ROLE_ID: ${{ vars.DISCORD_NEWS_ROLE_ID }}
+          DISCORD_RESEARCH_ROLE_ID: ${{ vars.DISCORD_RESEARCH_ROLE_ID }}
         run: |
-          python3 scripts/notify_discord.py --posts new-posts.json --webhook-url "$DISCORD_WEBHOOK_URL"
+          python3 scripts/notify_discord.py \
+            --posts new-posts.json \
+            --webhook-url "$DISCORD_WEBHOOK_URL" \
+            --news-role-id "$DISCORD_NEWS_ROLE_ID" \
+            --research-role-id "$DISCORD_RESEARCH_ROLE_ID"
