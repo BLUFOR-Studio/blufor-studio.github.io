@@ -25,6 +25,8 @@ def build_embed(post):
     authors = post.get("authors") or []
     if authors:
         embed["author"] = {"name": ", ".join(authors)}
+    if post.get("feature_url"):
+        embed["image"] = {"url": post["feature_url"]}
     if post.get("tags"):
         embed["footer"] = {"text": ", ".join(post["tags"])}
     return embed

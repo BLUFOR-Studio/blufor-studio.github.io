@@ -74,6 +74,11 @@ def main():
     ap.add_argument("--base-url", required=True)
     ap.add_argument("--state-file", required=True, type=Path)
     ap.add_argument("--out", required=True, type=Path)
+    ap.add_argument(
+        "--force",
+        action="store_true",
+        help="Ignore the state file when deciding what's new (still updates it after).",
+    )
     args = ap.parse_args()
 
     base_url = args.base_url.rstrip("/")
@@ -81,7 +86,7 @@ def main():
 
     authors = load_authors(args.authors_file)
 
-    if args.state_file.exists():
+    if args.state_file.exists() and not args.force:
         notified = set(json.loads(args.state_file.read_text(encoding="utf-8")))
     else:
         notified = set()
@@ -118,6 +123,9 @@ def main():
                 "date": date.isoformat(),
                 "authors": author_names,
                 "feature": fm.get("feature"),
+                "feature_url": (
+                    permalink + fm["feature"] if fm.get("feature") else None
+                ),
                 "tags": fm.get("tags", []),
             }
         )

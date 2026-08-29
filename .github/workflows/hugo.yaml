@@ -7,6 +7,11 @@ on:
     # 15 = 15:00 (3 PM) UTC
     - cron: '0 15 * * *'
   workflow_dispatch:
+    inputs:
+      force_renotify:
+        description: "Re-send Discord notifications for all currently-published posts (ignores prior notification history)"
+        type: boolean
+        default: false
 permissions:
   contents: read
   pages: write
@@ -167,12 +172,18 @@ jobs:
       - name: Find newly-public posts
         run: |
           BASE_URL=$(grep -oP "^baseURL\s*=\s*['\"]\K[^'\"]+" hugo.toml)
+          FORCE_FLAG=""
+          if [[ "${{ inputs.force_renotify }}" == "true" ]]; then
+            echo "force_renotify requested: ignoring notification history for this run."
+            FORCE_FLAG="--force"
+          fi
           python3 scripts/find_new_posts.py \
             --content-dir content/posts \
             --authors-file data/en/authors.toml \
             --base-url "$BASE_URL" \
             --state-file .cache/notified-posts.json \
-            --out new-posts.json
+            --out new-posts.json \
+            $FORCE_FLAG
           cat new-posts.json
 
       - name: Cache save (notified posts state)
