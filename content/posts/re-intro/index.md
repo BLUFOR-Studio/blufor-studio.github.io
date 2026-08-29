@@ -1,5 +1,5 @@
 +++
-date = '2026-08-29T12:00:00-03:00'
+date = '2026-08-29T15:02:30-03:00'
 draft = false
 title = 'The Long Way Ahead... Test'
 feature = "OPFOR.png"
