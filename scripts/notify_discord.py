@@ -45,7 +45,7 @@ def build_content(post, news_role_id, research_role_id):
         pings.append(f"<@&{research_role_id}>")
 
     prefix = " ".join(pings) + " " if pings else ""
-    return f"{prefix}📝 New post published: **{post['title']}**"
+    return f"{prefix} New post published!!!"
 
 
 def build_embed(post):
