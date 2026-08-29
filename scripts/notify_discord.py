@@ -47,7 +47,7 @@ def main():
 
     for post in posts:
         payload = {
-            "content": f"📝 New post published: **{post['title']}**",
+            "content": f"@everyone New post published!!!",
             "embeds": [build_embed(post)],
         }
         data = json.dumps(payload).encode("utf-8")
