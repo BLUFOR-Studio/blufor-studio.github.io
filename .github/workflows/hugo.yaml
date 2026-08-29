@@ -150,6 +150,8 @@ jobs:
     needs: deploy
     permissions:
       contents: read
+    env:
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -180,8 +182,6 @@ jobs:
           key: ${{ steps.notify-cache-restore.outputs.cache-primary-key }}
 
       - name: Send Discord notification
-        if: ${{ secrets.DISCORD_WEBHOOK_URL != '' }}
-        env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        if: ${{ env.DISCORD_WEBHOOK_URL != '' }}
         run: |
           python3 scripts/notify_discord.py --posts new-posts.json --webhook-url "$DISCORD_WEBHOOK_URL"
