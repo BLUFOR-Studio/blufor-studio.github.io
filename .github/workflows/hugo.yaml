@@ -6,7 +6,7 @@ on:
   schedule:
     # 17 = 17:00 (5 PM) UTC+2
     - cron: '0 17 * * *'
-      timezone: "Europe/Spain"
+      timezone: "Europe/Madrid"
   workflow_dispatch:
     inputs:
       force_renotify:
