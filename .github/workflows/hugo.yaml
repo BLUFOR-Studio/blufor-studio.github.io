@@ -4,8 +4,9 @@ on:
     branches:
       - main
   schedule:
-    # 15 = 15:00 (3 PM) UTC
-    - cron: '0 15 * * *'
+    # 17 = 17:00 (5 PM) UTC+2
+    - cron: '0 17 * * *'
+      timezone: "Europe/Spain"
   workflow_dispatch:
     inputs:
       force_renotify:
